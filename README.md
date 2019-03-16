@@ -1,1 +1,3 @@
-# generative-fiction-experiments
+# Generative Fiction Experiements
+
+Mostly twine files.
