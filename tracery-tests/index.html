@@ -1,38 +1,54 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>Tracery Demos</title>
-		<link rel="stylesheet" href="css/layout.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1, shrink-to-fit=no"><!-- Bootstrap CSS -->
+    <link rel="stylesheet" href= 
+    "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity=
+    "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" type="text/css">
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
 
-	</head>
-	<body>
-		<div id="container">
+    <title>Experiments with Tracery Grammars</title>
+</head>
 
-			<div id="content">
+<body>
+    <div class="container">
+        <!-- Content here -->
 
-				<h1>Tracery</h1>
-				<select id="grammarSelect">
-					<option value="scifi">Scifi Detective</option>
-					<option value="conference">New Media Conference</option>
-					<option value="nightvale">Eternal Nightvale</option>
-					<option value="poem">Poetry</option>
-					<option value="neverbar">Neverbar</option>
-				</select>
-
+        <!-- <h1>Experiments with Tracery Grammars</h1>-->
+		
+		<div class="jumbotron">
+		  <h1 class="display-4">Alien Memories</h1>
+		  <p class="lead">This a set of generated texts in the form of an Alien Memory, using the Tracery javascript text-generation library</p>
+		  <hr class="my-4">
 				<div id="output">
 					Output
 				</div>
-				<div id="grammar">
-					Grammar
-				</div>
-			</div>
 		</div>
-		<script src="js/vendor/jquery-1.11.2.min.js"></script>
-		<script src="js/tracery.min.js"></script>
-		<script src="js/grammars.js"></script>
-		<script src="js/app.js"></script>
 
-	</body>
+        <div id="grammar">
+            Grammar
+        </div>
+    </div><!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity=
+    "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous" type="text/javascript">
+</script><script src= 
+"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous" type="text/javascript">
+</script><script src= 
+"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity=
+"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous" type="text/javascript">
+</script><script src="js/vendor/jquery-1.11.2.min.js" type="text/javascript">
+</script><script src="js/tracery.min.js" type="text/javascript">
+</script><script src="js/grammars.js" type="text/javascript">
+</script><script src="js/app.js" type="text/javascript">
+</script>
+</body>
 </html>

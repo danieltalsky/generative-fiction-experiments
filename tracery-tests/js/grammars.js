@@ -3,6 +3,86 @@
  */
 
 var grammars = {
+    memories : {
+        move : ["flock", "race", "glide", "dance", "flee", "lie"],
+
+        bird : ["swan", "heron", "sparrow", "swallow", "wren", "robin"],
+        
+		agent : ["cloud", "wave", "#bird#", "boat", "ship"],
+
+        transVerb : ["forget", "plant", "greet", "remember", "embrace", "feel", "love"],
+        
+		emotion : ["sorrow", "gladness", "joy", "heartache", "love", "forgiveness", "grace"],
+        
+		substance : ["#emotion#", "mist", "fog", "glass", "silver", "rain", "dew", "cloud", "virtue", "sun", "shadow", "gold", "light", "darkness"],
+        
+		adj : ["fair", "bright", "splendid", "divine", "inseparable", "fine", "lazy", "grand", "slow", "quick", "graceful", "grave", "clear", "faint", "dreary"],
+        
+		doThing : ["come", "move", "cry", "weep", "laugh", "dream"],
+
+        verb : ["fleck", "grace", "bless", "dapple", "touch", "caress", "smooth", "crown", "veil"],
+        
+		ground : ["glen", "river", "vale", "sea", "meadow", "forest", "glade", "grass", "sky", "waves"],
+
+        poeticAdj : ["#substance#-#verb.ed#"],
+        
+		poeticDesc : ["#poeticAdj#", "by #substance# #verb#'d", "#adj# with #substance#", "#verb.ed# with #substance#"],
+
+        ah : ["ah", "alas", "oh", "yet", "but", "and"],
+        
+		on : ["on", "in", "above", "beneath", "under", "by"],
+
+		punctutation: [",", ":", " ", "!", ".", "?"],
+
+        noun: ["#ground#", "#agent#"],
+        
+		placeName: "dirrsin masterss egalian rafifi tornaask ebullen demene derdesh suggue".split(" "),
+		
+		geography: ["plain", "hill", "mesa", "field", "desert", "forest", "crag", "outcropping", "city"],
+		
+		birthMethod: ["egg", "spore", "dust", "beam of light", "ejaculate", "slab of tungsten alloy", "meatball", "bundle of fibers"],
+        
+		young: "anana orinta jethr ingit ting jenk bolk trist vilt bant hart jussel oen stiss chelt oot aort sless".split(" "),
+		
+		birth: ["I was born of #birthMethod.a# in the cradle of the #homeland.s#.  Especially, in this particular #homeland# named #placeName.capitalize#, I came of age."],
+		
+		shortMemory: [
+			"I abided.", "I taught children.", "I lived for many years on only #birthMethod.a#.", "I walked around for many days.", "I learned the ways of the elders.",
+			"I went to a special place named #placeName.capitalize#.", "I got swept up in an all-consuming feeling of love."
+				],
+				
+		numberWord: "two three four five six seven eight nine ten thirty-six eight-hundred-ninety-two".split(" "),		
+				
+		longMemory: [
+			"Tremendous feelings overcame me, because I knew I would not be able to stand against the great evil.  No one would be able to.",
+			"It's not possible to explain all I went through.  It is lost to the history of my people.  I wouldn't wish this for you.",
+			"I am very close to perfection, but I am not there yet.  I stay in this world only to teach.",
+			"Now I know, that when the #numberWord# planets align in the night sky, I will understand everything, and my children will not suffer."
+		],
+		
+		closingMemory: [
+			"That's how I came to be here.", "Now I find myself in this place, #placeName#.", "Then time ended.", "I will never know what happened next.",
+			"Now, life for me has lost all joy.", "Now I have no friends around me.", "The storm is coming now.", "What else can be said?",
+			"I'll be here until the end of my days.", "If you ever find out anything important, let me know."
+		],
+		
+		memoryDescriptor: "clear hazy important beautiful full".split(" "),
+		
+		memories: ["#shortMemory# #shortMemory# #longMemory# #shortMemory# #closingMemory#"],
+		
+		font: ['Rock Salt', 'Audiowide', 'Fredericka the Great', 'Pangolin','Staatliches','Berkshire Swash','Bungee'],
+		
+		origin : '<div style="font-size: 2.3em; font-family: \'#font#\', sans-serif">I have #memoryDescriptor# memories of my time as #young.capitalize.a#ling. #[homeland:#geography#]birth# #memories#</div>'
+    },	
+	
+	
+	
+	
+	
+	
+	
+	
+	
     neverbar : {
         vipTitle : ["Dr.", "Professor", "Lord", "Sir", "Captain", "His Majesty"],
         occupationBase : ["firefighter", "scientist", "spy", "smuggler", "mechanic", "astronaut", "adventurer", "pirate", "cowboy", "vampire", "detective", "soldier", "marine", "doctor", "ninja"],

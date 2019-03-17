@@ -24,11 +24,7 @@ $(document).ready(function() {
     }
 
     setTimeout(function() {
-        loadGrammar("scifi");
+        loadGrammar("memories");
 
     }, 10);
-
-    $('#grammarSelect').on('change', function() {
-        loadGrammar(this.value);
-    });
 });
